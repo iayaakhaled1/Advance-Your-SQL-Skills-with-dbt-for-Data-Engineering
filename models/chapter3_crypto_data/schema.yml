@@ -1,0 +1,24 @@
+version: 2.1.0
+
+schemas:
+  - name: crypto_data
+    version: 1
+    fields:
+      - name: currency
+        type: STRING
+        nullable: true
+      - name: detail_date
+        type: STRING
+        nullable: true
+      - name: closing_price
+        type: FLOAT
+        nullable: true
+      - name: 24_hour_open
+        type: FLOAT
+        nullable: true
+      - name: 24h_high_usd
+        type: FLOAT
+        nullable: true
+      - name: 24h_low_usd
+        type: FLOAT
+        nullable: true
