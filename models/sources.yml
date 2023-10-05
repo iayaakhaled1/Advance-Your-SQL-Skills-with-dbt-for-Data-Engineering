@@ -1,0 +1,6 @@
+version: 2
+
+sources:
+  - name: dbt_database
+    tables:
+      - name: raw_taxi_trips
