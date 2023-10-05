@@ -10,3 +10,11 @@
 
 - Name: refers to the schema in bigquery ( or other cloud providers )
 - Table: refers to the table name
+
+
+## Step2) Create dbt models 
+1) First, create a new model called over_nine_miles.sql which generates a table that contains all the columns of the source data with only the taxi trips with a distance of over nine miles. 
+2) Second, create a new model called credit_card_count.sql that contains a breakdown of the fares paid by credit card. 
+3) Third, create a new model called cross_borough.sql which generates a table that contains all of the columns of the source data with only the trips which start in one borough and end in a different borough. 
+4) Fourth, create a new model called avg_num_dropoff_manhattan.sql which contains the average number of passengers on all trips with a drop-off borough that is in Manhattan. For each of these, 
+- make sure you add the necessary information to schema.yml. 
