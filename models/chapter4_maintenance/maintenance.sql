@@ -16,57 +16,5 @@ select job_id, excavator_id
 from {{ ref("jobs") }}
 inner join excavator_id_cte 
 using (excavator_id) 
-where job_id = 398
+where job_id in (398, 417,401,332,329,340,366,373,376,423)
 
-union all
-
-select job_id, excavator_id
-from {{ ref("jobs") }}
-inner join excavator_id_cte using (excavator_id) WHERE job_id = 417
-
-union all
-
-select job_id, excavator_id
-from {{ ref("jobs") }}
-inner join excavator_id_cte using (excavator_id) WHERE job_id = 401
-
-union all
-
-select job_id, excavator_id
-from {{ ref("jobs") }}
-inner join excavator_id_cte using (excavator_id) WHERE job_id = 332
-
-union all
-
-select job_id, excavator_id
-from {{ ref("jobs") }}
-inner join excavator_id_cte using (excavator_id) WHERE job_id = 329
-
-union all
-
-select job_id, excavator_id
-from {{ ref("jobs") }}
-inner join excavator_id_cte using (excavator_id) WHERE job_id = 340
-
-union all
-select job_id, excavator_id
-from {{ ref("jobs") }}
-inner join excavator_id_cte using (excavator_id) WHERE job_id = 366
-
-union all
-
-select job_id, excavator_id
-from {{ ref("jobs") }}
-inner join excavator_id_cte using (excavator_id) WHERE job_id = 373
-
-union all
-
-select job_id, excavator_id
-from {{ ref("jobs") }}
-inner join excavator_id_cte using (excavator_id) WHERE job_id = 376
-
-union all
-
-select job_id, excavator_id
-from {{ ref("jobs") }}
-inner join excavator_id_cte using (excavator_id) WHERE job_id = 423
