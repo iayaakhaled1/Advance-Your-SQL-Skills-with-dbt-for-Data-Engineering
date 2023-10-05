@@ -1,0 +1,155 @@
+version: 2.1.0
+
+schemas:
+  - name: taxi_data
+    version: 1
+    fields:
+      - name: pickup
+        type: DATETIME
+
+      - name: dropoff
+        type: DATETIME
+
+      - name: passengers
+        type: INTEGER
+
+      - name: distance
+        type: FLOAT
+
+      - name: fare
+        type: FLOAT
+
+      - name: tip
+        type: FLOAT
+
+      - name: tolls
+        type: FLOAT
+
+      - name: total
+        type: FLOAT
+
+      - name: color
+        type: STRING
+
+      - name: payment
+        type: STRING
+
+      - name: pickup_zone
+        type: STRING
+
+      - name: dropoff_zone
+        type: STRING
+
+      - name: pickup_borough
+        type: STRING
+
+      - name: dropoff_borough
+        type: STRING
+
+  - name: over_nine_miles
+    description: which generates a table that contains all the columns of the source data with only the taxi trips with a distance of over nine miles. 
+    version: 1
+    fields:
+      - name: pickup
+        type: DATETIME
+
+      - name: dropoff
+        type: DATETIME
+
+      - name: passengers
+        type: INTEGER
+
+      - name: distance
+        type: FLOAT
+        description:  only the taxi trips with a distance of over nine miles. 
+
+      - name: fare
+        type: FLOAT
+
+      - name: tip
+        type: FLOAT
+
+      - name: tolls
+        type: FLOAT
+
+      - name: total
+        type: FLOAT
+
+      - name: color
+        type: STRING
+
+      - name: payment
+        type: STRING
+
+      - name: pickup_zone
+        type: STRING
+
+      - name: dropoff_zone
+        type: STRING
+
+      - name: pickup_borough
+        type: STRING
+
+      - name: dropoff_borough
+        type: STRING
+
+  - name: credit_card_count
+    description: which generates a table that contains all the columns of the source data with only the taxi trips with credit card. 
+    version: 1
+    fields:
+      - name: fare
+        type: FLOAT
+          
+      - name: total_fares_paid_by_credit_card
+        type: FLOAT
+
+  - name: cross_borough
+    description: which generates a table that contains all of the columns of the source data with only the trips which start in one borough and end in a different borough. 
+    fields:
+      - name: pickup
+        type: DATETIME
+
+      - name: dropoff
+        type: DATETIME
+
+      - name: passengers
+        type: INTEGER
+
+      - name: distance
+        type: FLOAT
+
+      - name: fare
+        type: FLOAT
+
+      - name: tip
+        type: FLOAT
+
+      - name: tolls
+        type: FLOAT
+
+      - name: total
+        type: FLOAT
+
+      - name: color
+        type: STRING
+
+      - name: payment
+        type: STRING
+
+      - name: pickup_zone
+        type: STRING
+
+      - name: dropoff_zone
+        type: STRING
+
+      - name: pickup_borough
+        type: STRING
+
+      - name: dropoff_borough
+        type: STRING
+
+  - name: avg_num_dropoff_manhattan
+    description: which generates a table that contains all of the columns of the source data with only the trips which start in one borough and end in a different borough. 
+    fields:
+      - name: avg_num_of_passengers
+        type: FLOAT
