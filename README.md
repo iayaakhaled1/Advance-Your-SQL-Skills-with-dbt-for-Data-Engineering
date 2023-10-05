@@ -2,7 +2,7 @@
 Course By LinkedIn learning
 
 ## Connections:
-#### To establish a connection between BigQuery and dbt Cloud, you'll need to provide the necessary credentials and configuration details. Here are the steps to obtain the connection file for BigQuery:
+#### Step1) To establish a connection between BigQuery and dbt Cloud, you'll need to provide the necessary credentials and configuration details. Here are the steps to obtain the connection file for BigQuery:
 1) Access the Google Cloud Console: Go to the Google Cloud Console and sign in to your Google account.
 2) Create a project (if needed): If you don't have a project set up for your BigQuery instance, create one by clicking on the project dropdown menu at the top of the console and selecting "New Project." Follow the prompts to set up the project.
 3) Create a service account: In the Google Cloud Console, navigate to "IAM & Admin" > "Service Accounts." Click on "Create Service Account." Provide a name and description for the service account, and click "Create."
@@ -19,3 +19,10 @@ Course By LinkedIn learning
 - Save the connection: After entering the required details, click on "Save" to create the BigQuery connection in dbt Cloud.
 - 
 ### Once the connection is successfully set up, you can use it to run dbt models and execute transformations on your BigQuery data using dbt Cloud.
+
+
+## Step2) Connect to GitHub
+1) Connecting your GitHub account to dbt Cloud provides convenience and another layer of security to dbt Cloud:
+2) Log into dbt Cloud using OAuth through GitHub.
+3) Import new GitHub repositories with a couple clicks during dbt Cloud project setup.
+
