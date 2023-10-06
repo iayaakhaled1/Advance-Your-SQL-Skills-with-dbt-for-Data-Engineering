@@ -7,3 +7,4 @@ sources:
       - name: raw_crypto_data
       - name: raw_jobs
       - name: raw_excavators
+      - name: raw_ads_id
