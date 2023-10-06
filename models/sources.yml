@@ -4,3 +4,6 @@ sources:
   - name: dbt_database
     tables:
       - name: raw_taxi_trips
+      - name: raw_crypto_data
+      - name: raw_jobs
+      - name: raw_excavators
